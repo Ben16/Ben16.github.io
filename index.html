@@ -36,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#professional">Professional</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -58,24 +58,95 @@
       <div class="mx-auto text-center">
         <h1 class="mx-auto my-0 text-uppercase">Ben Fickes</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Let's solve problems and make great software.</h2>
-        <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
+        <a href="#professional" class="btn btn-primary js-scroll-trigger">What I've Done</a>
+        <a href="#about" class="btn btn-primary js-scroll-trigger">Who I am</a>
       </div>
     </div>
   </header>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects-section bg-light">
+  <section id="professional" class="projects-section bg-light">
+      <div class="container d-flex h-100 align-items-center">
+          <div class="mx-auto text-center">
+            <h1 class="mx-auto my-0 text-uppercase">Professional Projects</h1>
+            <h2 class="text-black-50 mx-auto mt-2 mb-5">Software I've created as part of a professional team</h2>
+          </div>
+      </div>
     <div class="container">
 
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+        <div class="col-lg-6">
+          <a href="https://www.sega.com/games/segaheroes" target="_blank"><img class="img-fluid mb-3 mb-lg-0" src="img/sega_heroes.jpg" alt=""></a>
         </div>
-        <div class="col-xl-4 col-lg-5">
+        <div class="col-lg-6">
           <div class="featured-text text-center text-lg-left">
-            <h4>Shoreline</h4>
-            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
+            <h4>SEGA Heroes</h4>
+            <h6>Demiurge Studios</h6>
+            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+            <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      What I Did
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                      <li>Created an extensible server tool to refund accidental purchases</li>
+                      <li>Implemented abilities (in reusable pieces) and connected animations for 10 new characters (plus tweaked some old ones)</li>
+                      <li>Various bug fixes and non-character features (ex: additional UI features, JITT, more precise and fair energy regen)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What I Learned
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                        <li>The importance of communication on a cross-discipline team. In particular, character animations required a lot of artist input</li>
+                        <li>Thoughtful design decisions in creating a new API that others will use and contribute to</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          What I Used
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                          <li>C#, Go, C++</li>
+                          <li>Perforce, Git, JIRA</li>
+                          <li>A whole lotta JSON</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- End Accordion -->
+            <!--<p class="text-black-50 mb-0">I worked as a software engineer across the tech stack, writing game, server, and engine code.  
+              My last month was primarily spent implementing a server tool to refund accidental player purchases. 
+              When finished, my tool let QA refund mistaken purchases with the click of a button, as opposed to requiring an engineer to manually input changes to an older save JSON. 
+              Plus, I made the tool extensible, so that adding other ways to manipulate players saves would be easier for other engineers on the team.</p>-->
           </div>
         </div>
       </div>
