@@ -74,27 +74,27 @@
       </div>
     <div class="container">
 
-      <!-- Featured Project Row -->
+      <!-- SEGA Heroes -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-lg-6">
-          <a href="https://www.sega.com/games/segaheroes" target="_blank"><img class="img-fluid mb-3 mb-lg-0" src="img/sega_heroes.jpg" alt=""></a>
+          <img class="img-fluid mb-3 mb-lg-0" src="img/sega_heroes.jpg" alt="">
         </div>
         <div class="col-lg-6">
           <div class="featured-text text-center text-lg-left">
-            <h4>SEGA Heroes</h4>
-            <h6>Demiurge Studios</h6>
+            <h4><a href="https://www.sega.com/games/segaheroes" target="_blank">SEGA Heroes</a></h4>
+            <h6><a href="https://www.demiurgestudios.com/" target="_blank">Demiurge Studios</a></h6>
             <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
             <div id="accordion">
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="did">
                   <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid" aria-expanded="false" aria-controls="collapseDid">
                       What I Did
                     </button>
                   </h5>
                 </div>
             
-                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div id="collapseDid" class="collapse" aria-labelledby="did" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="text-black-50 mb-0" style="list-style-type:circle;">
                       <li>Created an extensible server tool to refund accidental purchases</li>
@@ -105,33 +105,34 @@
                 </div>
               </div>
               <div class="card">
-                  <div class="card-header" id="headingTwo">
+                  <div class="card-header" id="learned">
                     <h5 class="mb-0">
-                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned" aria-expanded="false" aria-controls="collapseLearned">
                         What I Learned
                       </button>
                     </h5>
                   </div>
               
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div id="collapseLearned" class="collapse" aria-labelledby="learned" data-parent="#accordion">
                     <div class="card-body">
                       <ul class="text-black-50 mb-0" style="list-style-type:circle;">
                         <li>The importance of communication on a cross-discipline team. In particular, character animations required a lot of artist input</li>
                         <li>Thoughtful design decisions in creating a new API that others will use and contribute to</li>
+                        <li>Working on a smaller team means more responsibility and owning more tasks (a good thing!)</li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <div class="card">
-                    <div class="card-header" id="headingThree">
+                    <div class="card-header" id="used">
                       <h5 class="mb-0">
-                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed" aria-expanded="false" aria-controls="collapseUsed">
                           What I Used
                         </button>
                       </h5>
                     </div>
                 
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div id="collapseUsed" class="collapse" aria-labelledby="used" data-parent="#accordion">
                       <div class="card-body">
                         <ul class="text-black-50 mb-0" style="list-style-type:circle;">
                           <li>C#, Go, C++</li>
@@ -143,13 +144,88 @@
                   </div>
             </div>
             <!-- End Accordion -->
-            <!--<p class="text-black-50 mb-0">I worked as a software engineer across the tech stack, writing game, server, and engine code.  
-              My last month was primarily spent implementing a server tool to refund accidental player purchases. 
-              When finished, my tool let QA refund mistaken purchases with the click of a button, as opposed to requiring an engineer to manually input changes to an older save JSON. 
-              Plus, I made the tool extensible, so that adding other ways to manipulate players saves would be easier for other engineers on the team.</p>-->
           </div>
         </div>
       </div>
+
+
+<!-- Pivotal -->
+<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+    <div class="col-lg-6">
+      <div class="featured-text text-center text-lg-left">
+        <h4><a href="https://docs.pivotal.io/pivotalcf/2-6/buildpacks/" target="_blank">Buildpacks Team</a></h4>
+        <h6><a href="https://pivotal.io/" target="_blank">Pivotal</a></h6>
+        <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+        <div id="accordion2">
+        <div class="card">
+            <div class="card-header" id="did2">
+              <h5 class="mb-0">
+                <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid2" aria-expanded="false" aria-controls="collapseDid2">
+                  What I Did
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseDid2" class="collapse" aria-labelledby="did2" data-parent="#accordion2">
+              <div class="card-body">
+                <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                  <li>Developed a wide range of language buildpacks (Node, Dotnet, Ruby) for compiling various cloud-based apps</li>
+                  <li>Contributed to the implementation of the first prototype <a href="https://buildpacks.io/" target="_blank">V3 buildpack</a></li>
+                  <li>Updated and debugged testing pipeline corresponding to new features</li>
+                  <li>Responded to community issues</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+              <div class="card-header" id="learned2">
+                <h5 class="mb-0">
+                  <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned2" aria-expanded="false" aria-controls="collapseLearned2">
+                    What I Learned
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseLearned2" class="collapse" aria-labelledby="learned2" data-parent="#accordion2">
+                <div class="card-body">
+                  <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                    <li>Pair programming professionally - how to verbalize ideas and listen to others'</li>
+                    <li>How to explain my work. We rotated pairs everyday, so ~50% of the time I had to explain the previous work to someone new to it</li>
+                    <li>Agile development - my first exposure to standups, postmortems, and sprints</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="used2">
+                  <h5 class="mb-0">
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed2" aria-expanded="false" aria-controls="collapseUsed2">
+                      What I Used
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseUsed2" class="collapse" aria-labelledby="used2" data-parent="#accordion2">
+                  <div class="card-body">
+                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                      <li>Go and a bit of Ruby</li>
+                      <li>Bash (a lot of experience using CLI's)</li>
+                      <li>Git, Slack, 
+                        <a href="https://www.pivotaltracker.com/?utm_source=google&utm_campaign=brand&utm_medium=cpc&utm_term=pivotal%20tracker&utm_content=experts&gclid=EAIaIQobChMIt7yhsbHM5wIVDpSzCh3OMgc9EAAYAiAAEgIj4PD_BwE" target="_blank">Pivotal Tracker</a>, 
+                        <a href="https://concourse-ci.org/" target="_blank">Concourse</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- End Accordion -->
+      </div>
+    </div>
+    <div class="col-lg-6">
+        <img class="img-fluid mb-3 mb-lg-0" src="img/pivotal.jpg" alt="">
+      </div>
+  </div>
+
 
       <!-- Project One Row -->
       <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
@@ -217,7 +293,7 @@
           <h2 class="text-white mb-4">About Me</h2>
           <p class="text-white-50">I'm a (graduating!) student at Northeastern University, studying Computer Science & Game Development. 
             I got into computer science not just because I love games, but because I want to work on software that impacts people. When I'm not programming, I enjoy running, writing fiction, and gaming with friends.</p>
-            <p class="text-white-50">If you make impactful software and need a developer, send me an <a href="mailto:fickes.b@husky.neu.edu">email</a> or give me a call. Want more info to help make your decision? Check out my <a href="https://github.com/Ben16/">Github</a>, or email me with any questions.</p>
+            <p class="text-white-50">If you make impactful software and need a backend developer, send me an <a href="mailto:fickes.b@husky.neu.edu">email</a> or give me a call. Want more info to help make your decision? Check out my <a href="https://github.com/Ben16/">Github</a>, or email me with any questions.</p>
 
         </div>
       </div>
