@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Paladins</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/grayscale.min.css" rel="stylesheet">
+
+  <!-- My site icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">Ben Fickes</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">Paladins</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Scroll down for more detailed information on my Paladins work</h2>
+        <h4><a href="index.html" class="text-black-50">Back to main page</a></h4>
+      </div>
+    </div>
+  </header>
+
+  <!-- Paladins Section -->
+  <section id="paladins" class="bg-light">
+    <div class="container">
+
+      <!-- Trials of the Realm -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="trials">
+        <div class="col-lg-6">
+          <div class="featured-text text-lg-left">
+            <h4>Trials of the Realm</h4>
+            <h6>Time-based, subsectioned, configurable quest system</h6>
+            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+            <div id="accordion8">
+            <div class="card">
+                <div class="card-header" id="did8">
+                  <h5 class="mb-0">
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid8" aria-expanded="false" aria-controls="collapseDid8">
+                      More Details
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseDid8" class="collapse" aria-labelledby="did8" data-parent="#accordion8">
+                  <div class="card-body">
+                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                      <li>The TotR system has a notion of "regions", which contain "hubs", which contain "challenges". Rewards are on a hub-by-hub basis, and only 2 hubs can be simultaneously unlocked/progressed.</li>
+                      <li>The UI components and data are neatly separated, so that the same UI components can display the information for different regions/hubs/challenges.</li>
+                      <li>Each region opens at a different time, so the player should only be able to access regions that are currently available to be unlocked, but should be able to see all regions (and when they unlock). An item, active or inactive to indicate when the region opens, can be scheduled by designers.</li>
+                      <li>Players have tickets (a new currency created for TotR) they can spend to unlock a hub. From a technical standpoint, players "have" all hubs (quest groups) that are scheduled, but all progress is gated by a challenge (invisible to the player) that is only completed by "purchasing" the hub unlock item with a ticket.</li>
+                      <li>The completion state and progress of each region/hub/challenge is tallied and displayed to the player.</li>
+                      <li>Lore blurbs, region titles, and region order are all configurable by design.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/paladins.jpg" alt="">
+        </div>
+      </div>
+      
+      <!-- Vatu -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5" id="vatu">
+        <div class="col-lg-6">
+          <img class="img-fluid mb-3 mb-lg-0" src="img/paladins.jpg" alt="">
+        </div>
+        <div class="col-lg-6">
+          <div class="featured-text text-lg-left">
+            <h4>Vatu</h4>
+            <h6>Flank champion</h6>
+            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+            <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="did">
+                  <h5 class="mb-0">
+                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid" aria-expanded="false" aria-controls="collapseDid">
+                      More Details
+                    </button>
+                  </h5>
+                </div>
+            
+                <div id="collapseDid" class="collapse" aria-labelledby="did" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                      <li>Client-authoritative (but server validated) chain teleport attack</li>
+                      <li>Delayed-explosion bombs that stick to the environment and will fall off shields that are retracted</li>
+                      <li>Ultimate that uses start/stop button presses to acommodate gamepad players. This was new technology added, now usable by other devices.</li>
+                      <li>Dash ability that maps off combinations of character view and player input</li>
+                      <li>Triple projectile spread attack</li>
+                      <li>Coordination with other teams for triggering sound and visual effects and transitioning animation states</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Accordion -->
+          </div>
+        </div>
+      </div>
+
+
+<!-- Azaan -->
+<div class="row align-items-center no-gutters mb-4 mb-lg-5" id="azaan">
+    <div class="col-lg-6">
+      <div class="featured-text text-lg-left">
+        <h4>Azaan</h4>
+        <h6>Frontline Champion</h6>
+        <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+        <div id="accordion2">
+        <div class="card">
+            <div class="card-header" id="did2">
+              <h5 class="mb-0">
+                <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid2" aria-expanded="false" aria-controls="collapseDid2">
+                  More Details
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseDid2" class="collapse" aria-labelledby="did2" data-parent="#accordion2">
+              <div class="card-body">
+                <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                  <li>Multi-wall place ability; 3D math to find focal point for walls, project wall positions, and account for ground and if terrain has room for that segment.</li>
+                  <li>Ultimate ability where Azaan throws a hammer that unleashes an explosion, pauses, travels quickly to the hammer, and unleashes a secondary explosion. This ability has many sub-states (flying, aiming, throwing, lerping, finished); timers and fireloop triggers are used to manage animation states, camera viewpoint, and status effects on Azaan. This ability also uses 3D math to find appropriate locations for Azaan to travel to</li>
+                  <li>Rectangle shaped attack that pierces geometry. This ability shoots a projectile that "bursts" into a rectangle at its endpoint.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Accordion -->
+      </div>
+    </div>
+    <div class="col-lg-6">
+        <img class="img-fluid mb-3 mb-lg-0" src="img/paladins.jpg" alt="">
+      </div>
+  </div>
+
+    </div>
+  </section>
+
+ <!-- Contact Section -->
+  <section id="contact" class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">Oakland, CA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="mailto:benfickes88@gmail.com">benfickes88@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (302) 750-3364</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black small text-center text-white-50">
+    <div class="container">
+      This page also uses Grayscale, a free template. Wanna <a href="https://startbootstrap.com/themes/grayscale/">check it out</a>?
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/grayscale.min.js"></script>
+
+</body>
+
+</html>
