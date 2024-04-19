@@ -87,7 +87,7 @@
     <div class="row align-items-center no-gutters mb-4 mb-lg-5">  
     <div class="col-lg-6">
           <div class="featured-text text-lg-left">
-            <h4><a href="https://www.wonderstorm.net/#dragon-prince-game" target="_blank">Project Arcanum</a></h4>
+            <h4><a href="https://www.playxadia.com/" target="_blank">Xadia</a></h4>
             <h6><a href="https://www.wonderstorm.net/" target="_blank">Wonderstorm</a></h6>
             <h6>Unreleased</h6>
             <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
@@ -106,7 +106,10 @@
                     <ul class="text-black-50 mb-0" style="list-style-type:circle;">
                       <li>Created animation notify state for target focusing; designers and animators use this to fine tune how long into enemies' animations the player is targeted</li>
                       <li>Augmented Tasks from Gameplay Ability System plugin to allow design to configure distance/time lerps. Also added improved customizations, such as for collision offsets (used in melee attacks) and navmesh restriction</li>
+                      <li>Reworked end-of-match flow for asynchronous match exit and improved victory/defeat events. Players can use a portal to exit the match once they complete the final objective, and if they quit after completing the last objective, they'll still get credit</li>
+                      <li>Improved efficiency of perception system. Previously, we had used a lot of default values, and all Pawns were considered for perception. Plus, all factions would consider friendly characters for perception (which was only necessary for one corner case). By changing this, I reduced the number of perception traces dratstically; in some levels, the trace count reduced by 90%.
                       <li>Added mouse pointer targeting, improving abilities and providing technical support for ping system</li>
+                      <li>Using a lot of Unreal profiling tools. On mobile, our memory budget is critical, so I've identified problem assets blueprint functions. I've also worked on some systemic memory improvements, like a level unloading system.
                       <li>Implemented root status effect, including implementing an animation root motion scaling factor</li>
                       <li>Debugged various issues, such as failing dialog transitions and crashes</li>
                     </ul>
@@ -125,8 +128,8 @@
                   <div id="collapseLearnedWonderstorm" class="collapse" aria-labelledby="learnedWonderstorm" data-parent="#accordionWonderstorm">
                     <div class="card-body">
                       <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                        <li>How to profile for memory and performance (and identify problem assets and areas)</li>
                         <li>Creating new systems that can be used and expanded throughout the project's lifecycle</li>
-                        <li>Prioritizing and balancing different design requests, bugs, and code cleanup opportunities</li>
                         <li>Balancing configuration vs. runtime complexity to improve the player experience</li>
                       </ul>
                     </div>
@@ -146,6 +149,7 @@
                         <ul class="text-black-50 mb-0" style="list-style-type:circle;">
                           <li>C++ and Unreal Engine 4</li>
                           <li>Gameplay Ability System, an Unreal plugin</li>
+                          <li>Unreal Insights, Memreport, and Unreal's stat commands</li>
                           <li>A proprietary Racket-based configuration system</li>
                         </ul>
                       </div>
@@ -893,7 +897,7 @@
           <h2 class="text-white mb-4">About Me</h2>
           <p class="text-white-50">I graduated from Northeastern University in 2020 with a degree in Computer Science & Game Development. I now work at Wonderstorm as a Gameplay Engineer - you can see more about my past and present work <a href="#professional" class="btn btn-primary js-scroll-trigger">here</a>.
             When I'm not programming, I enjoy Dungeons & Dragons (as a player and a DM - you can check out some of my homebrew campaigns <a href="dnd.html">here</a>), running, and gaming with friends.</p>
-            <p class="text-white-50">If you make games and are looking for a programmer, send me an <a href="mailto:benfickes88@gmail.com">email</a> or give me a call. Want more info to help make your decision? Check out my <a href="https://github.com/Ben16/" target="_blank">Github</a>, my <a href="resume.pdf" target="_blank">resume</a>, or email me with any questions.</p>
+            <p class="text-white-50">If you make games and are looking for a programmer, send me an <a href="mailto:fickes.benjamin@gmail.com">email</a> or give me a call. Want more info to help make your decision? Check out my <a href="https://github.com/Ben16/" target="_blank">Github</a>, my <a href="resume.pdf" target="_blank">resume</a>, or email me with any questions.</p>
 
         </div>
       </div>
