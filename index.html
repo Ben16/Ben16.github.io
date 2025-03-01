@@ -81,399 +81,477 @@
             <h2 class="text-black-50 mx-auto mt-2 mb-5">Software I've created as part of a professional team</h2>
           </div>
       </div>
-    <div class="container">
+      <div class="container">
 
-    <!-- Wonderstorm -->
-    <div class="row align-items-center no-gutters mb-4 mb-lg-5">  
-    <div class="col-lg-6">
-          <div class="featured-text text-lg-left">
-            <h4><a href="https://www.playxadia.com/" target="_blank">Xadia</a></h4>
-            <h6><a href="https://www.wonderstorm.net/" target="_blank">Wonderstorm</a></h6>
-            <h6><a href="https://apps.apple.com/us/app/dragon-prince-xadia-netflix/id6503992496" target="_blank">Available Now</a></h6>
-            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
-            <div id="accordionWonderstorm">
-            <div class="card">
-                <div class="card-header" id="didWonderstorm">
-                  <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDidWonderstorm" aria-expanded="false" aria-controls="collapseDidWonderstorm">
-                      What I'm Doing
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseDidWonderstorm" class="collapse" aria-labelledby="didWonderstorm" data-parent="#accordionWonderstorm">
-                  <div class="card-body">
-                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                      <li>Created animation notify state for target focusing; designers and animators use this to fine tune how long into enemies' animations the player is targeted</li>
-                      <li>Augmented Tasks from Gameplay Ability System plugin to allow design to configure distance/time lerps. Also added improved customizations, such as for collision offsets (used in melee attacks) and navmesh restriction</li>
-                      <li>Reworked end-of-match flow for asynchronous match exit and improved victory/defeat events. Players can use a portal to exit the match once they complete the final objective, and if they quit after completing the last objective, they'll still get credit</li>
-                      <li>Improved efficiency of perception system. Previously, we had used a lot of default values, and all Pawns were considered for perception. Plus, all factions would consider friendly characters for perception (which was only necessary for one corner case). By changing this, I reduced the number of perception traces dratstically; in some levels, the trace count reduced by 90%.
-                      <li>Added mouse pointer targeting, improving abilities and providing technical support for ping system</li>
-                      <li>Using a lot of Unreal profiling tools. On mobile, our memory budget is critical, so I've identified problem assets blueprint functions. I've also worked on some systemic memory improvements, like a level unloading system.
-                      <li>Implemented root status effect, including implementing an animation root motion scaling factor</li>
-                      <li>Debugged various issues, such as failing dialog transitions and crashes</li>
-                    </ul>
-                  </div>
-                </div>
+          <!-- T-Minus Zero -->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/tmz.jpg" alt="">
               </div>
-              <div class="card">
-                  <div class="card-header" id="learnedWonderstorm">
-                    <h5 class="mb-0">
-                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearnedWonderstorm" aria-expanded="false" aria-controls="collapseLearnedRoCoE">
-                        What I'm Learning
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseLearnedWonderstorm" class="collapse" aria-labelledby="learnedWonderstorm" data-parent="#accordionWonderstorm">
-                    <div class="card-body">
-                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                        <li>How to profile for memory and performance (and identify problem assets and areas)</li>
-                        <li>Creating new systems that can be used and expanded throughout the project's lifecycle</li>
-                        <li>Balancing configuration vs. runtime complexity to improve the player experience</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="usedWonderstorm">
-                      <h5 class="mb-0">
-                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsedWonderstorm" aria-expanded="false" aria-controls="collapseUsedWonderstorm">
-                          What I'm Using
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseUsedWonderstorm" class="collapse" aria-labelledby="usedWonderstorm" data-parent="#accordionWonderstorm">
-                      <div class="card-body">
-                        <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                          <li>C++ and Unreal Engine 4</li>
-                          <li>Gameplay Ability System, an Unreal plugin</li>
-                          <li>Unreal Insights, Memreport, and Unreal's stat commands</li>
-                          <li>A proprietary Racket-based configuration system</li>
-                        </ul>
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4>Unannounced Project</h4>
+                      <h6><a href="https://t-minuszero.com/" target="_blank">T-Minus Zero</a></h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordionTMZ">
+                          <div class="card">
+                              <div class="card-header" id="didTMZ">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDidTMZ" aria-expanded="false" aria-controls="collapseDidTMZ">
+                                          What I'm Doing
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseDidTMZ" class="collapse" aria-labelledby="didTMZ" data-parent="#accordionTMZ">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Implemented a GAS-based cooldown system and provided corresponding UI support.</li>
+                                          <li>Created a mountable Railgun turret. This had a lot of moving parts (figuratively and literally), and I worked very closely with a vfx artist, animator, and sound designer on this feature.</li>
+                                          <li>Made loot instanced (with an option of having non-instanced loot for certain pickups).</li>
+                                          <li>Integrated a third party plugin, Flying Navigation, which provided a 3D navmesh. I also provided additional support for flying enemies using this by created a 3D EQS item generator.</li>
+                                          <li>Implemented many more GAS features. Some of these include a stagger system, a speed boost zone, and fixing a bug present in GAS itself around attribute-based effect durations.</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learnedTMZ">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearnedTMZ" aria-expanded="false" aria-controls="collapseLearnedTMZ">
+                                          What I'm Learning
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearnedTMZ" class="collapse" aria-labelledby="learnedTMZ" data-parent="#accordionTMZ">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>New features in Unreal Engine 5</li>
+                                          <li>How to effectively build off of Lyra</li>
+                                          <li>Even more GAS!</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="usedTMZ">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsedTMZ" aria-expanded="false" aria-controls="collapseUsedTMZ">
+                                          What I'm Using
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsedTMZ" class="collapse" aria-labelledby="usedTMZ" data-parent="#accordionTMZ">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Unreal Engine 5 and C++</li>
+                                          <li>Gameplay Ability System plugin (GAS)</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                      <!-- End Accordion -->
                   </div>
-            </div>
-            <!-- End Accordion -->
-          </div>
-        </div>
-    <div class="col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/dragon-prince.jpg" alt="">
-        </div> 
-
-    <!-- Rogue Company Elite-->
-    <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-    <div class="col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/dima.jpg" alt="">
-        </div>    
-    <div class="col-lg-6">
-          <div class="featured-text text-lg-left">
-            <h4><a href="https://www.roguecompanyelite.com/" target="_blank">Rogue Company Elite</a></h4>
-            <h6><a href="https://www.hirezstudios.com/" target="_blank">Hi-Rez Studios (First Watch)</a></h6>
-            <h6>Unreleased</h6>
-            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
-            <div id="accordionRoCoE">
-            <div class="card">
-                <div class="card-header" id="didRoCoE">
-                  <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDidRoCoE" aria-expanded="false" aria-controls="collapseDidRoCoE">
-                      What I Did
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseDidRoCoE" class="collapse" aria-labelledby="didRoCoE" data-parent="#accordionRoCoE">
-                  <div class="card-body">
-                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                      <li>Created a system with UE4's UMG to allow stat bars for weapons and mods to be combined and fine-tuned by design</li>
-                      <li>Wrote a Python script to automatically play matches unatended to try to catch a low repro-rate crash that occurred at the end of some matches</li>
-                      <li>Interface with Android and iOS API to display battery life</li>
-                      <li>Various gameplay bug fixes</li>
-                    </ul>
-                  </div>
-                </div>
               </div>
-              <div class="card">
-                  <div class="card-header" id="learnedRoCoE">
-                    <h5 class="mb-0">
-                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearnedRoCoE" aria-expanded="false" aria-controls="collapseLearnedRoCoE">
-                        What I Learned
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseLearnedRoCoE" class="collapse" aria-labelledby="learnedRoCoE" data-parent="#accordionRoCoE">
-                    <div class="card-body">
-                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                        <li>Unreal Engine 4 (and interaction between native c++ and blueprints)</li>
-                        <li>How to write good documentation and tooling for designers</li>
-                        <li>The challenges of testing in a mobile environment</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="usedRoCoE">
-                      <h5 class="mb-0">
-                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsedRoCoE" aria-expanded="false" aria-controls="collapseUsedRoCoE">
-                          What I Used
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseUsedRoCoE" class="collapse" aria-labelledby="usedRoCoE" data-parent="#accordionRoCoE">
-                      <div class="card-body">
-                        <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                          <li>C++ and Unreal Engine 4</li>
-                          <li>A bit of Python</li>
-                          <li>Visual Studio, JIRA, Perforce</li>
-                        </ul>
+
+          </div>
+
+          <!-- Wonderstorm -->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4><a href="https://www.playxadia.com/" target="_blank">Xadia</a></h4>
+                      <h6><a href="https://www.wonderstorm.net/" target="_blank">Wonderstorm</a></h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordionWonderstorm">
+                          <div class="card">
+                              <div class="card-header" id="didWonderstorm">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDidWonderstorm" aria-expanded="false" aria-controls="collapseDidWonderstorm">
+                                          What I Did
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseDidWonderstorm" class="collapse" aria-labelledby="didWonderstorm" data-parent="#accordionWonderstorm">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Created animation notify state for target focusing; designers and animators use this to fine tune how long into enemies' animations the player is targeted</li>
+                                          <li>Augmented Tasks from Gameplay Ability System plugin to allow design to configure distance/time lerps. Also added improved customizations, such as for collision offsets (used in melee attacks) and navmesh restriction</li>
+                                          <li>Reworked end-of-match flow for asynchronous match exit and improved victory/defeat events. Players can use a portal to exit the match once they complete the final objective, and if they quit after completing the last objective, they'll still get credit</li>
+                                          <li>Improved efficiency of perception system. Previously, we had used a lot of default values, and all Pawns were considered for perception. Plus, all factions would consider friendly characters for perception (which was only necessary for one corner case). By changing this, I reduced the number of perception traces dratstically; in some levels, the trace count reduced by 90%.
+                                          <li>Added mouse pointer targeting, improving abilities and providing technical support for ping system</li>
+                                          <li>Using a lot of Unreal profiling tools. On mobile, our memory budget is critical, so I've identified problem assets blueprint functions. I've also worked on some systemic memory improvements, like a level unloading system.
+                                          <li>Implemented root status effect, including implementing an animation root motion scaling factor</li>
+                                          <li>Debugged various issues, such as failing dialog transitions and crashes</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learnedWonderstorm">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearnedWonderstorm" aria-expanded="false" aria-controls="collapseLearnedRoCoE">
+                                          What I Learned
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearnedWonderstorm" class="collapse" aria-labelledby="learnedWonderstorm" data-parent="#accordionWonderstorm">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>How to profile for memory and performance (and identify problem assets and areas)</li>
+                                          <li>Creating new systems that can be used and expanded throughout the project's lifecycle</li>
+                                          <li>Balancing configuration vs. runtime complexity to improve the player experience</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="usedWonderstorm">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsedWonderstorm" aria-expanded="false" aria-controls="collapseUsedWonderstorm">
+                                          What I Used
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsedWonderstorm" class="collapse" aria-labelledby="usedWonderstorm" data-parent="#accordionWonderstorm">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>C++ and Unreal Engine 4</li>
+                                          <li>Gameplay Ability System plugin (GAS)</li>
+                                          <li>Unreal Insights, Memreport, and Unreal's stat commands</li>
+                                          <li>A proprietary Racket-based configuration system</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                      <!-- End Accordion -->
                   </div>
-            </div>
-            <!-- End Accordion -->
-          </div>
-        </div>
-        
-      </div>
-
-      <!-- Paladins -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-lg-6">
-          <div class="featured-text text-lg-left">
-            <h4><a href="https://www.paladins.com/" target="_blank">Paladins</a></h4>
-            <h6><a href="https://www.hirezstudios.com/" target="_blank">Hi-Rez Studios (Evil Mojo)</a></h6>
-            <h6><a href="paladins.html">More Details</a></h6>
-            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
-            <div id="accordion8">
-            <div class="card">
-                <div class="card-header" id="did8">
-                  <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid8" aria-expanded="false" aria-controls="collapseDid8">
-                      What I Did
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseDid8" class="collapse" aria-labelledby="did8" data-parent="#accordion8">
-                  <div class="card-body">
-                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                      <li>Azaan. This character is a tank with a multi-wall ability, and a teleport projectile ultimate with many animation states. For more details, <a href="paladins.html#azaan">click here!</a></li>
-                      <li>Vatu. This character has some technically cool abilities - a chain teleport, a two-press ultimate, and sticky bombs that adhere to surfaces (and will drop from shields). For more details, <a href="paladins.html#vatu">click here!</a></li>
-                      <li>Built (and improve!) new Trials of the Realm system. These quests are nested in sections that open up at certain time intervals each patch. I was the primary programmer for this system, so I programmed the UI components, progress tracking, unlock/in progress/lock states, and so forth. Details? <a href="paladins.html#trials">Here.</a></li>
-                      <li>An automated script for setting up each patches' challenges for TotR. This helps save our designers time and prevent possible bugs.</li>
-                      <li>Investigate, debug, and fix crash reports from live clients</li>
-                      <li>Fix live exploits that allow players to cheat - including hacking items and using unreleased characters - and other bugs</li>
-                    </ul>
-                  </div>
-                </div>
               </div>
-              <div class="card">
-                  <div class="card-header" id="learned8">
-                    <h5 class="mb-0">
-                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned8" aria-expanded="false" aria-controls="collapseLearned8">
-                        What I Learned
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseLearned8" class="collapse" aria-labelledby="learned8" data-parent="#accordion8">
-                    <div class="card-body">
-                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                        <li>Unreal Engine!</li>
-                        <li>Accounting for latency in a client-server environment.</li>
-                        <li>Documentation is important to both make and consult.</li>
-                        <li>Dealing with legacy code in supporting a game that's several years old</li>
-                        <li>How to effectively communicate and work together with others in a remote office environment</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="used8">
-                      <h5 class="mb-0">
-                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed8" aria-expanded="false" aria-controls="collapseUsed8">
-                          What I Used
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseUsed8" class="collapse" aria-labelledby="used8" data-parent="#accordion8">
-                      <div class="card-body">
-                        <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                          <li>C++ and UnrealScipt for Unreal Engine 3</li>
-                          <li>A bit of SQL</li>
-                          <li>Visual Studio (using debugging tools more extensively than I have before)</li>
-                          <li>JIRA, Perforce</li>
-                        </ul>
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/dragon-prince.jpg" alt="">
+              </div>
+          </div>
+
+          <!-- Rogue Company Elite-->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/dima.jpg" alt="">
+              </div>
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4><a href="https://www.roguecompanyelite.com/" target="_blank">Rogue Company Elite</a></h4>
+                      <h6><a href="https://www.hirezstudios.com/" target="_blank">Hi-Rez Studios (First Watch)</a></h6>
+                      <h6>Unreleased</h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordionRoCoE">
+                          <div class="card">
+                              <div class="card-header" id="didRoCoE">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDidRoCoE" aria-expanded="false" aria-controls="collapseDidRoCoE">
+                                          What I Did
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseDidRoCoE" class="collapse" aria-labelledby="didRoCoE" data-parent="#accordionRoCoE">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Created a system with UE4's UMG to allow stat bars for weapons and mods to be combined and fine-tuned by design</li>
+                                          <li>Wrote a Python script to automatically play matches unatended to try to catch a low repro-rate crash that occurred at the end of some matches</li>
+                                          <li>Interface with Android and iOS API to display battery life</li>
+                                          <li>Various gameplay bug fixes</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learnedRoCoE">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearnedRoCoE" aria-expanded="false" aria-controls="collapseLearnedRoCoE">
+                                          What I Learned
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearnedRoCoE" class="collapse" aria-labelledby="learnedRoCoE" data-parent="#accordionRoCoE">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Unreal Engine 4 (and interaction between native c++ and blueprints)</li>
+                                          <li>How to write good documentation and tooling for designers</li>
+                                          <li>The challenges of testing in a mobile environment</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="usedRoCoE">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsedRoCoE" aria-expanded="false" aria-controls="collapseUsedRoCoE">
+                                          What I Used
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsedRoCoE" class="collapse" aria-labelledby="usedRoCoE" data-parent="#accordionRoCoE">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>C++ and Unreal Engine 4</li>
+                                          <li>A bit of Python</li>
+                                          <li>Visual Studio, JIRA, Perforce</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                      <!-- End Accordion -->
                   </div>
-            </div>
-            <!-- End Accordion -->
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/paladins.jpg" alt="">
-        </div>
-      </div>
-      
-      <!-- SEGA Heroes -->
-      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-        <div class="col-lg-6">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/sega_heroes.jpg" alt="">
-        </div>
-        <div class="col-lg-6">
-          <div class="featured-text text-lg-left">
-            <h4><a href="https://www.sega.com/games/segaheroes" target="_blank">SEGA Heroes</a></h4>
-            <h6><a href="https://www.demiurgestudios.com/" target="_blank">Demiurge Studios</a></h6>
-            <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
-            <div id="accordion">
-            <div class="card">
-                <div class="card-header" id="did">
-                  <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid" aria-expanded="false" aria-controls="collapseDid">
-                      What I Did
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseDid" class="collapse" aria-labelledby="did" data-parent="#accordion">
-                  <div class="card-body">
-                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                      <li>Created an extensible server tool to refund accidental purchases</li>
-                      <li>Implemented abilities (in reusable pieces) and connected animations for 10 new characters (plus tweaked some old ones)</li>
-                      <li>Various bug fixes and non-character features (ex: additional UI features, JITT, more precise and fair energy regen)</li>
-                    </ul>
-                  </div>
-                </div>
               </div>
-              <div class="card">
-                  <div class="card-header" id="learned">
-                    <h5 class="mb-0">
-                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned" aria-expanded="false" aria-controls="collapseLearned">
-                        What I Learned
-                      </button>
-                    </h5>
-                  </div>
-              
-                  <div id="collapseLearned" class="collapse" aria-labelledby="learned" data-parent="#accordion">
-                    <div class="card-body">
-                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                        <li>The importance of communication on a cross-discipline team. In particular, character animations required a lot of artist input</li>
-                        <li>Thoughtful design decisions in creating a new API that others will use and contribute to</li>
-                        <li>Working on a smaller team means more responsibility and owning more tasks (a good thing!)</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="used">
-                      <h5 class="mb-0">
-                        <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed" aria-expanded="false" aria-controls="collapseUsed">
-                          What I Used
-                        </button>
-                      </h5>
-                    </div>
-                
-                    <div id="collapseUsed" class="collapse" aria-labelledby="used" data-parent="#accordion">
-                      <div class="card-body">
-                        <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                          <li>C#, Go, C++</li>
-                          <li>Perforce, Git, JIRA</li>
-                          <li>A whole lotta JSON</li>
-                        </ul>
+
+          </div>
+
+          <!-- Paladins -->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4><a href="https://www.paladins.com/" target="_blank">Paladins</a></h4>
+                      <h6><a href="https://www.hirezstudios.com/" target="_blank">Hi-Rez Studios (Evil Mojo)</a></h6>
+                      <h6><a href="paladins.html">More Details</a></h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordion8">
+                          <div class="card">
+                              <div class="card-header" id="did8">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid8" aria-expanded="false" aria-controls="collapseDid8">
+                                          What I Did
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseDid8" class="collapse" aria-labelledby="did8" data-parent="#accordion8">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Azaan. This character is a tank with a multi-wall ability, and a teleport projectile ultimate with many animation states. For more details, <a href="paladins.html#azaan">click here!</a></li>
+                                          <li>Vatu. This character has some technically cool abilities - a chain teleport, a two-press ultimate, and sticky bombs that adhere to surfaces (and will drop from shields). For more details, <a href="paladins.html#vatu">click here!</a></li>
+                                          <li>Built (and improve!) new Trials of the Realm system. These quests are nested in sections that open up at certain time intervals each patch. I was the primary programmer for this system, so I programmed the UI components, progress tracking, unlock/in progress/lock states, and so forth. Details? <a href="paladins.html#trials">Here.</a></li>
+                                          <li>An automated script for setting up each patches' challenges for TotR. This helps save our designers time and prevent possible bugs.</li>
+                                          <li>Investigate, debug, and fix crash reports from live clients</li>
+                                          <li>Fix live exploits that allow players to cheat - including hacking items and using unreleased characters - and other bugs</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learned8">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned8" aria-expanded="false" aria-controls="collapseLearned8">
+                                          What I Learned
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearned8" class="collapse" aria-labelledby="learned8" data-parent="#accordion8">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Unreal Engine!</li>
+                                          <li>Accounting for latency in a client-server environment.</li>
+                                          <li>Documentation is important to both make and consult.</li>
+                                          <li>Dealing with legacy code in supporting a game that's several years old</li>
+                                          <li>How to effectively communicate and work together with others in a remote office environment</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="used8">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed8" aria-expanded="false" aria-controls="collapseUsed8">
+                                          What I Used
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsed8" class="collapse" aria-labelledby="used8" data-parent="#accordion8">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>C++ and UnrealScipt for Unreal Engine 3</li>
+                                          <li>A bit of SQL</li>
+                                          <li>Visual Studio (using debugging tools more extensively than I have before)</li>
+                                          <li>JIRA, Perforce</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
                       </div>
-                    </div>
+                      <!-- End Accordion -->
                   </div>
-            </div>
-            <!-- End Accordion -->
+              </div>
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/paladins.jpg" alt="">
+              </div>
           </div>
-        </div>
-      </div>
 
+          <!-- SEGA Heroes -->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/sega_heroes.jpg" alt="">
+              </div>
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4><a href="https://www.sega.com/games/segaheroes" target="_blank">SEGA Heroes</a></h4>
+                      <h6><a href="https://www.demiurgestudios.com/" target="_blank">Demiurge Studios</a></h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordion">
+                          <div class="card">
+                              <div class="card-header" id="did">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid" aria-expanded="false" aria-controls="collapseDid">
+                                          What I Did
+                                      </button>
+                                  </h5>
+                              </div>
 
-<!-- Pivotal -->
-<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-    <div class="col-lg-6">
-      <div class="featured-text text-lg-left">
-        <h4><a href="https://docs.pivotal.io/pivotalcf/2-6/buildpacks/" target="_blank">Buildpacks</a></h4>
-        <h6><a href="https://pivotal.io/" target="_blank">Pivotal</a></h6>
-        <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
-        <div id="accordion2">
-        <div class="card">
-            <div class="card-header" id="did2">
-              <h5 class="mb-0">
-                <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid2" aria-expanded="false" aria-controls="collapseDid2">
-                  What I Did
-                </button>
-              </h5>
-            </div>
-        
-            <div id="collapseDid2" class="collapse" aria-labelledby="did2" data-parent="#accordion2">
-              <div class="card-body">
-                <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                  <li>Developed a wide range of language buildpacks (Node, Dotnet, Ruby) for compiling various cloud-based apps</li>
-                  <li>Contributed to the implementation of the first prototype <a href="https://buildpacks.io/" target="_blank">V3 buildpack</a></li>
-                  <li>Updated and debugged testing pipeline corresponding to new features</li>
-                  <li>Responded to community issues</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-              <div class="card-header" id="learned2">
-                <h5 class="mb-0">
-                  <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned2" aria-expanded="false" aria-controls="collapseLearned2">
-                    What I Learned
-                  </button>
-                </h5>
-              </div>
-          
-              <div id="collapseLearned2" class="collapse" aria-labelledby="learned2" data-parent="#accordion2">
-                <div class="card-body">
-                  <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                    <li>Pair programming professionally - how to verbalize ideas and listen to others'</li>
-                    <li>How to explain my work. We rotated pairs everyday, so ~50% of the time I had to explain the previous work to someone new to it</li>
-                    <li>Agile development - my first exposure to standups, postmortems, and sprints</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-                <div class="card-header" id="used2">
-                  <h5 class="mb-0">
-                    <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed2" aria-expanded="false" aria-controls="collapseUsed2">
-                      What I Used
-                    </button>
-                  </h5>
-                </div>
-            
-                <div id="collapseUsed2" class="collapse" aria-labelledby="used2" data-parent="#accordion2">
-                  <div class="card-body">
-                    <ul class="text-black-50 mb-0" style="list-style-type:circle;">
-                      <li>Go and a bit of Ruby</li>
-                      <li>Bash (a lot of experience using CLI's)</li>
-                      <li>Git, Slack, 
-                        <a href="https://www.pivotaltracker.com/?utm_source=google&utm_campaign=brand&utm_medium=cpc&utm_term=pivotal%20tracker&utm_content=experts&gclid=EAIaIQobChMIt7yhsbHM5wIVDpSzCh3OMgc9EAAYAiAAEgIj4PD_BwE" target="_blank">Pivotal Tracker</a>, 
-                        <a href="https://concourse-ci.org/" target="_blank">Concourse</a></li>
-                    </ul>
+                              <div id="collapseDid" class="collapse" aria-labelledby="did" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Created an extensible server tool to refund accidental purchases</li>
+                                          <li>Implemented abilities (in reusable pieces) and connected animations for 10 new characters (plus tweaked some old ones)</li>
+                                          <li>Various bug fixes and non-character features (ex: additional UI features, JITT, more precise and fair energy regen)</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learned">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned" aria-expanded="false" aria-controls="collapseLearned">
+                                          What I Learned
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearned" class="collapse" aria-labelledby="learned" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>The importance of communication on a cross-discipline team. In particular, character animations required a lot of artist input</li>
+                                          <li>Thoughtful design decisions in creating a new API that others will use and contribute to</li>
+                                          <li>Working on a smaller team means more responsibility and owning more tasks (a good thing!)</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="used">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed" aria-expanded="false" aria-controls="collapseUsed">
+                                          What I Used
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsed" class="collapse" aria-labelledby="used" data-parent="#accordion">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>C#, Go, C++</li>
+                                          <li>Perforce, Git, JIRA</li>
+                                          <li>A whole lotta JSON</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Accordion -->
                   </div>
-                </div>
               </div>
-        </div>
-        <!-- End Accordion -->
-      </div>
-    </div>
-    <div class="col-lg-6">
-        <img class="img-fluid mb-3 mb-lg-0" src="img/pivotal.jpg" alt="">
-      </div>
-  </div>
+          </div>
 
-    </div>
+
+          <!-- Pivotal -->
+          <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+              <div class="col-lg-6">
+                  <div class="featured-text text-lg-left">
+                      <h4><a href="https://docs.pivotal.io/pivotalcf/2-6/buildpacks/" target="_blank">Buildpacks</a></h4>
+                      <h6><a href="https://pivotal.io/" target="_blank">Pivotal</a></h6>
+                      <!-- Accordion: taken from https://getbootstrap.com/docs/4.0/components/collapse/-->
+                      <div id="accordion2">
+                          <div class="card">
+                              <div class="card-header" id="did2">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseDid2" aria-expanded="false" aria-controls="collapseDid2">
+                                          What I Did
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseDid2" class="collapse" aria-labelledby="did2" data-parent="#accordion2">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Developed a wide range of language buildpacks (Node, Dotnet, Ruby) for compiling various cloud-based apps</li>
+                                          <li>Contributed to the implementation of the first prototype <a href="https://buildpacks.io/" target="_blank">V3 buildpack</a></li>
+                                          <li>Updated and debugged testing pipeline corresponding to new features</li>
+                                          <li>Responded to community issues</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="learned2">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseLearned2" aria-expanded="false" aria-controls="collapseLearned2">
+                                          What I Learned
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseLearned2" class="collapse" aria-labelledby="learned2" data-parent="#accordion2">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Pair programming professionally - how to verbalize ideas and listen to others'</li>
+                                          <li>How to explain my work. We rotated pairs everyday, so ~50% of the time I had to explain the previous work to someone new to it</li>
+                                          <li>Agile development - my first exposure to standups, postmortems, and sprints</li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="card">
+                              <div class="card-header" id="used2">
+                                  <h5 class="mb-0">
+                                      <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseUsed2" aria-expanded="false" aria-controls="collapseUsed2">
+                                          What I Used
+                                      </button>
+                                  </h5>
+                              </div>
+
+                              <div id="collapseUsed2" class="collapse" aria-labelledby="used2" data-parent="#accordion2">
+                                  <div class="card-body">
+                                      <ul class="text-black-50 mb-0" style="list-style-type:circle;">
+                                          <li>Go and a bit of Ruby</li>
+                                          <li>Bash (a lot of experience using CLI's)</li>
+                                          <li>
+                                              Git, Slack,
+                                              <a href="https://www.pivotaltracker.com/?utm_source=google&utm_campaign=brand&utm_medium=cpc&utm_term=pivotal%20tracker&utm_content=experts&gclid=EAIaIQobChMIt7yhsbHM5wIVDpSzCh3OMgc9EAAYAiAAEgIj4PD_BwE" target="_blank">Pivotal Tracker</a>,
+                                              <a href="https://concourse-ci.org/" target="_blank">Concourse</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- End Accordion -->
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <img class="img-fluid mb-3 mb-lg-0" src="img/pivotal.jpg" alt="">
+              </div>
+          </div>
+
+      </div>
   </section>
 
     <!-- Personal Projects Section -->
@@ -494,9 +572,9 @@
             <div class="h-100 project">
               <div class="d-flex h-100">
                 <div class="project-text w-100 my-auto text-lg-left">
-                  <h4 class="text-white"><a href="https://xalfer.itch.io/rogumon-escape-from-torment" target="_blank">Rogumon</a></h4>
+                  <h4 class="text-white"><a href="https://store.steampowered.com/app/3157550/Rogumon/" target="_blank">Rogumon</a></h4>
                   <h5 class="text-white-50">Creature Collector + Roguelite</h5>
-                  <h6 class="text-white-50">Demo password: Exile</h6>
+                  <h6 class="text-white-50"><a href="https://xalfer.itch.io/rogumon-escape-from-torment">Itch Demo</a> password: Exile</h6>
                   <h6 class="text-white">Team: Me as programmer/designer/writer, various art asset packs</h6>
                   <div id="accordion4">
                       <div class="card bg-black">
@@ -657,8 +735,8 @@
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <h2 class="text-white mb-4">About Me</h2>
-          <p class="text-white-50">I graduated from Northeastern University in 2020 with a degree in Computer Science & Game Development. I now work at Wonderstorm as a Gameplay Engineer - you can see more about my past and present work <a href="#professional" class="btn btn-primary js-scroll-trigger">here</a>.
-            When I'm not programming, I enjoy Dungeons & Dragons (as a player and a DM - you can check out some of my homebrew campaigns <a href="dnd.html">here</a>), running, and gaming with friends.</p>
+          <p class="text-white-50">I graduated from Northeastern University in 2020 with a degree in Computer Science & Game Development. I now work at T-Minus Zero as a Gameplay Engineer - you can see more about my past and present work <a href="#professional" class="btn btn-primary js-scroll-trigger">here</a>.
+            When I'm not programming, I enjoy Dungeons & Dragons (as a player and a DM - you can check out some of my homebrew campaigns <a href="dnd.html">here</a>), running, gaming with friends, and making my own game, <a href="https://store.steampowered.com/app/3157550/Rogumon/">Rogumon</a>.</p>
             <p class="text-white-50">If you make games and are looking for a programmer, send me an <a href="mailto:fickes.benjamin@gmail.com">email</a> or give me a call. Want more info to help make your decision? Check out my <a href="https://github.com/Ben16/" target="_blank">Github</a>, my <a href="resume.pdf" target="_blank">resume</a>, or email me with any questions.</p>
 
         </div>
